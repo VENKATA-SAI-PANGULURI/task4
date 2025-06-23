@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Venkata Sai | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <h1 class="site-title">Venkata Sai</h1>
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link active" data-target="portfolio">Portfolio</a></li>
+          <li><a href="#" class="nav-link" data-target="notes">Note App</a></li>
+          <li><a href="#" class="nav-link" data-target="products">Product Listing</a></li>
+          <li><button id="theme-toggle" title="Toggle Theme">🌓</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content container">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="content-section active">
+      <section class="section-block">
+        <h2>About Me</h2>
+        <div class="card">
+          I’m a passionate B.Tech student in AI & ML at R.V.R & J.C College of Engineering, with interests in problem-solving, web technologies, and building smart solutions with AI.
+        </div>
+      </section>
+
+      <section class="section-block">
+        <h2>Projects</h2>
+        <div class="card">🤖 <strong>AI Chatbot</strong> – Built a Q&A chatbot using Python and NLP.</div>
+        <div class="card">🌐 <strong>Portfolio Website</strong> – Showcased skills using HTML, CSS, JS.</div>
+        <div class="card">📊 <strong>ML Placement Predictor</strong> – Used Scikit-learn for placement predictions.</div>
+      </section>
+
+      <section class="section-block">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="card">Languages: Python, Java, C++</div>
+          <div class="card">Web: HTML, CSS, JavaScript</div>
+          <div class="card">ML Tools: Pandas, NumPy, Scikit-learn</div>
+          <div class="card">Concepts: DSA, OOP, DBMS, AI/ML</div>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </section>
+
+    <!-- Note App -->
+    <section id="notes" class="content-section">
+      <h2>Note App</h2>
+      <div class="note-container">
+        <div class="note-controls">
+          <input id="note-input" type="text" placeholder="Type a new note..." />
+          <button id="add-note">Add</button>
+        </div>
+        <div id="note-list"></div>
+      </div>
+    </section>
+
+    <!-- Product Listing -->
+    <section id="products" class="content-section">
+      <h2>Product Listing</h2>
+      <div class="filter-controls">
+        <select id="category-filter">
+          <option value="all">All</option>
+          <option value="electronics">Electronics</option>
+          <option value="fashion">Fashion</option>
+        </select>
+        <select id="sort-option">
+          <option value="price-asc">Price ↑</option>
+          <option value="price-desc">Price ↓</option>
+          <option value="rating-desc">Rating</option>
+        </select>
+      </div>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    &copy; 2025 Venkata Sai | All rights reserved
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
